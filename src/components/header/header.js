@@ -1,28 +1,42 @@
-import Logo from './assets/Logo.svg';
+import Logo from '../../assets/logos/Logo.svg';
 
 import React, { Component } from 'react';
 
-import './App.css';
+import './header.css';
 
-export default function Header(){
-    return(
-        <header>
-            <div className="logo">
-                <img src={Logo} />
+export default function Header() {
+    return (
+        <header className='header-container'>
+          <nav className='header-container__nav'>
+            <div>
+                <a href="#">CURSOS</a>
             </div>
-            <nav>
-                <ul>
-                    <li>
-                        <a href="#">Inicio</a>
-                    </li>
-                    <li>
-                        <a href="#">Serviços</a>
-                    </li>
-                    <li>
-                        <a href="#">Contato</a>
-                    </li>
-                </ul>
-            </nav>
+
+            <div>
+                <a href="#">CONTATO</a>
+            </div>
+
+            <div>
+                <a>
+                 <img src={Logo} />
+                </a>
+            </div>
+
+            <div>
+                <a href="#">LOCAL</a>
+            </div>
+
+            <div>
+                <a href="#">SERVIÇOS</a>
+            </div>
+          </nav>
+
+          <div className='header-container__divisor'> 
+          </div>
+          
         </header>
     );
 }
+
+                
+    
