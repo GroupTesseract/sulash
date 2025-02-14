@@ -4,6 +4,8 @@
   flex-direction: column;
   gap: 2.5rem;
   padding: 2rem;
+  position: relative;
+  /* Adicionado para posicionar a barra corretamente */
 }
 
 .header-container__nav {
@@ -20,16 +22,40 @@
   max-width: 200px;
 }
 
-.header-container__nav a{
+.header-container__nav a {
   font-size: 1.875rem;
   text-decoration: none;
   color: #FF7EAF;
 }
 
 .header-container__divisor {
-  width: 582px;
   height: 2px;
   border-radius: 40px;
   background-color: #FF7EAF;
+  position: absolute;
+  /* Posicionamento absoluto para mover a barra */
+  bottom: 0;
+  /* Alinhar na parte inferior do header */
+  transition: left 0.3s, width 0.3s;
+  /* Transição suave */
 }
 
+.header-container__nav__login1{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 5rem;
+  width: 8rem;
+}
+
+.header-container__nav__login1:hover{
+  background-color: #FF7EAF;
+  border-radius: 22px;
+
+  color: black;
+  cursor: pointer;
+  transition: all 0.3s linear;
+}
+.header-container__nav__login2:hover{
+  color: black;
+}

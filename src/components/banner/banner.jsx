@@ -2,15 +2,13 @@ import ImgPrincipal from '../../assets/imgs/home/imgPrincipal.svg';
 
 import { FaWhatsapp} from 'react-icons/fa';
 
-import Header from '../../components/header/header';
-import Footer from '../../components/footer/footer';
 
-import './home.css';
+import './banner.css';
 
-export default function Home() {
+export default function Banner() {
     return (
        <>
-        <Header/>
+        
         <main>
             <section className='introduction-container'>
                 <div className='introduction-container__actions-container'>
@@ -25,10 +23,8 @@ export default function Home() {
                 </div>
             </section>
         </main>
-        <Footer/>
+        
        </>
        
     );
 }
-
-
